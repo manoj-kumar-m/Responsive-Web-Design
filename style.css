@@ -17,23 +17,27 @@ body, .container{
 .flex{
     display: flex;
 }
+
 .wrapper{
     display: flex;
     position: relative;
+    /* top: 0;
+    height: 100%;
+    left: 0; */
 }
 
 /* Sidebar */
 
 .sidebar{
-    height: 100vh;
-    width: 362px;
-    display: flex;
     position: sticky;
     top: 0;
     left: 0; 
+    height: 100vh;
+    width: 362px;
+    display: flex;
     background: #FFFFFF;
     border-right: 1px solid #EAECF0;
-    
+    /* overflow-y: hidden; */
 }
 
 .sidebar-left{
@@ -81,10 +85,12 @@ body, .container{
     align-items: center;
     justify-content: center;
 }
+
 .sidebar-logo svg{
     width: 18px !important;
     height: 18px !important;
 }
+
 .sidebar-logo-profile{
     width: 48px;
     height: 48px;
@@ -349,6 +355,8 @@ body, .container{
 .biodata-image{
     position: relative;
     z-index: 1000;
+    left: 0;
+    top: 0;
 }
 
 .biodata-image svg{
@@ -584,6 +592,10 @@ input:focus{
     font-size: 14px;
     line-height: 20px;
     color: #6941C6;
+    text-align: center !important;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .personal-info-upload-right-mid-text{
@@ -593,6 +605,10 @@ input:focus{
     font-size: 14px;
     line-height: 20px;
     color: #475467;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center !important;
 }
 
 .personal-info-upload-right-bottom{
@@ -603,6 +619,9 @@ input:focus{
     line-height: 18px;
     text-align: center;
     color: #475467;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .personal-info-footer{
@@ -1077,13 +1096,17 @@ input:focus{
     }
 
     .biodata-right{
-        padding-left: 20px;
+        padding-left: 4px;
         
     }
 
     .biodata-name{
-        padding-left: 20px;
+        padding-left: 4px;
         margin-bottom: 8px;
+    }
+
+    .biodata-image{
+        left: -8px;
     }
 }
 
@@ -1101,7 +1124,7 @@ input:focus{
     }
 
     .navbar{
-        padding-left: 10px;    
+        padding-left: 16px;    
     }
 
     .navbar-left{
@@ -1118,6 +1141,10 @@ input:focus{
 
     .personal-info{
         padding-top: 0;
+    }
+
+    .profile, .personal-info{
+        padding: 18px 16px;
     }
 
     .gradient-img{
